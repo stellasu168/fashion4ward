@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552E8B9B1D440D43004F8B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552E8B9A1D440D43004F8B2A /* AppDelegate.swift */; };
+		552E8B9D1D440D43004F8B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552E8B9C1D440D43004F8B2A /* ViewController.swift */; };
+		552E8BA01D440D43004F8B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552E8B9E1D440D43004F8B2A /* Main.storyboard */; };
+		552E8BA31D440D43004F8B2A /* Fashion4Ward.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 552E8BA11D440D43004F8B2A /* Fashion4Ward.xcdatamodeld */; };
+		552E8BA51D440D43004F8B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552E8BA41D440D43004F8B2A /* Assets.xcassets */; };
+		552E8BA81D440D43004F8B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552E8BA61D440D43004F8B2A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		552E8B971D440D42004F8B2A /* Fashion4Ward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fashion4Ward.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		552E8B9A1D440D43004F8B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		552E8B9C1D440D43004F8B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		552E8B9F1D440D43004F8B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		552E8BA21D440D43004F8B2A /* Fashion4Ward.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fashion4Ward.xcdatamodel; sourceTree = "<group>"; };
+		552E8BA41D440D43004F8B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		552E8BA71D440D43004F8B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		552E8BA91D440D43004F8B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		552E8B941D440D42004F8B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		552E8B8E1D440D42004F8B2A = {
+			isa = PBXGroup;
+			children = (
+				552E8B991D440D42004F8B2A /* Fashion4Ward */,
+				552E8B981D440D42004F8B2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		552E8B981D440D42004F8B2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				552E8B971D440D42004F8B2A /* Fashion4Ward.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		552E8B991D440D42004F8B2A /* Fashion4Ward */ = {
+			isa = PBXGroup;
+			children = (
+				552E8B9A1D440D43004F8B2A /* AppDelegate.swift */,
+				552E8B9C1D440D43004F8B2A /* ViewController.swift */,
+				552E8B9E1D440D43004F8B2A /* Main.storyboard */,
+				552E8BA41D440D43004F8B2A /* Assets.xcassets */,
+				552E8BA61D440D43004F8B2A /* LaunchScreen.storyboard */,
+				552E8BA91D440D43004F8B2A /* Info.plist */,
+				552E8BA11D440D43004F8B2A /* Fashion4Ward.xcdatamodeld */,
+			);
+			path = Fashion4Ward;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		552E8B961D440D42004F8B2A /* Fashion4Ward */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 552E8BAC1D440D43004F8B2A /* Build configuration list for PBXNativeTarget "Fashion4Ward" */;
+			buildPhases = (
+				552E8B931D440D42004F8B2A /* Sources */,
+				552E8B941D440D42004F8B2A /* Frameworks */,
+				552E8B951D440D42004F8B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fashion4Ward;
+			productName = Fashion4Ward;
+			productReference = 552E8B971D440D42004F8B2A /* Fashion4Ward.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		552E8B8F1D440D42004F8B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Million Stars, LLC";
+				TargetAttributes = {
+					552E8B961D440D42004F8B2A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 552E8B921D440D42004F8B2A /* Build configuration list for PBXProject "Fashion4Ward" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 552E8B8E1D440D42004F8B2A;
+			productRefGroup = 552E8B981D440D42004F8B2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				552E8B961D440D42004F8B2A /* Fashion4Ward */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		552E8B951D440D42004F8B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552E8BA81D440D43004F8B2A /* LaunchScreen.storyboard in Resources */,
+				552E8BA51D440D43004F8B2A /* Assets.xcassets in Resources */,
+				552E8BA01D440D43004F8B2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		552E8B931D440D42004F8B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552E8B9D1D440D43004F8B2A /* ViewController.swift in Sources */,
+				552E8BA31D440D43004F8B2A /* Fashion4Ward.xcdatamodeld in Sources */,
+				552E8B9B1D440D43004F8B2A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		552E8B9E1D440D43004F8B2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				552E8B9F1D440D43004F8B2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		552E8BA61D440D43004F8B2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				552E8BA71D440D43004F8B2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		552E8BAA1D440D43004F8B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		552E8BAB1D440D43004F8B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552E8BAD1D440D43004F8B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fashion4Ward/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.millionstarsllC.Fashion4Ward;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		552E8BAE1D440D43004F8B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fashion4Ward/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.millionstarsllC.Fashion4Ward;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		552E8B921D440D42004F8B2A /* Build configuration list for PBXProject "Fashion4Ward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552E8BAA1D440D43004F8B2A /* Debug */,
+				552E8BAB1D440D43004F8B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		552E8BAC1D440D43004F8B2A /* Build configuration list for PBXNativeTarget "Fashion4Ward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552E8BAD1D440D43004F8B2A /* Debug */,
+				552E8BAE1D440D43004F8B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		552E8BA11D440D43004F8B2A /* Fashion4Ward.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				552E8BA21D440D43004F8B2A /* Fashion4Ward.xcdatamodel */,
+			);
+			currentVersion = 552E8BA21D440D43004F8B2A /* Fashion4Ward.xcdatamodel */;
+			path = Fashion4Ward.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 552E8B8F1D440D42004F8B2A /* Project object */;
+}
