@@ -11,6 +11,8 @@ import UIKit
 class MainPhotoViewController: UIViewController{
     
     @IBOutlet weak var mainImageView: UIImageView!
+    let picNames = ["a", "b", "c", "d", "e", "f", "g"]
+    var currentImage: String!
     
     @IBAction func nextImage(sender: UIButton) {
         generateRandomPic()
@@ -30,14 +32,31 @@ class MainPhotoViewController: UIViewController{
     
     @IBAction func ratePhoto(sender: UIButton) {
         //navigate to ratingphotoview
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        print (currentImage)
+        controller.imageName = currentImage
+        self.navigationController!.pushViewController(controller, animated: true)
+        
     }
     
-    
+    @IBAction func addCategoryPage(sender: AnyObject) {
+        print("rating button")
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("CategoryViewController") as! CategoryViewController
+        self.navigationController!.pushViewController(controller, animated: true)
+    }
+
+/*
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as! ViewController
+        controller.imageName = currentImage
+    }
+*/    
     
     func generateRandomPic() {
-        let picNames = ["a", "b", "c", "d", "e", "f", "g"]
         let randomIndex = Int(arc4random_uniform(UInt32(picNames.count)))
-        mainImageView.image = UIImage(named: picNames[randomIndex])
+        let currentImageName = picNames[randomIndex]
+        currentImage = currentImageName
+        mainImageView.image = UIImage(named: currentImage)
     }
     
 

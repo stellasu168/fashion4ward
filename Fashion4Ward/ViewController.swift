@@ -8,45 +8,74 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
-
-    @IBOutlet weak var scrollView: UIScrollView!
+class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate {
+    
+    var comments = ["nah", "coool"]
+    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageView: UIImageView!
+    
+    var imageName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //scrollView.delegate = self
-        self.automaticallyAdjustsScrollViewInsets = false
-
+        
     }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    
+    override func viewWillAppear(animated: Bool) {
+        print(imageName)
         
-        let imageHeight = imageView.frame.height
-        
-        //let newOrigin = CGPoint(x: 0, y: -imageHeight)
-        
-        //scrollView.contentOffset = newOrigin
-        //scrollView.contentInset = UIEdgeInsets(top: imageHeight, left: 0, bottom: 0, right: 0)
+        imageView.image = UIImage(named: imageName)
     }
-
-
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    
+    //tableview delegate
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return comments.count
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("commentCell")!
         
-        let offsetY = scrollView.contentOffset.y
+        let comment = comments[indexPath.row]
         
-        if offsetY < 0
-        {
-            imageView.frame.size.height = -offsetY
+        //cell defaults
+        
+        cell.textLabel!.text = comment
+        return cell
+    }
+    
+    //addcomments
+    @IBAction func addComment(sender: AnyObject) {
+        
+        let alert = UIAlertController(title: "Comment",
+            message: "What do you think of my attire?",
+            preferredStyle: .Alert)
+        
+        let saveAction = UIAlertAction(title: "Save",
+            style: .Default,
+            handler: { (action:UIAlertAction) -> Void in
+                
+                let textField = alert.textFields!.first
+                self.comments.append(textField!.text!)
+                self.tableView.reloadData()
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+            style: .Default) { (action: UIAlertAction) -> Void in
         }
-        else
-        {
-            imageView.frame.size.height = imageView.frame.height
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (textField: UITextField) -> Void in
         }
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        presentViewController(alert,
+            animated: true,
+            completion: nil)
     }
-
     
     
 }
