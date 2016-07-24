@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B1f-mJ-hN1">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Category-->
         <scene sceneID="7Xt-MI-DTN">
             <objects>
-                <viewController title="Category" id="poH-Id-i1k" sceneMemberID="viewController">
+                <viewController title="Category" id="poH-Id-i1k" customClass="CategoryViewController" customModule="Fashion4Ward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n6q-qx-r6L"/>
                         <viewControllerLayoutGuide type="bottom" id="C7D-AK-4NJ"/>
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvd-L5-XWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.5" y="-38.5"/>
+            <point key="canvasLocation" x="1271.5" y="-506.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -141,12 +141,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081.5" y="-38.5"/>
+            <point key="canvasLocation" x="1813.5" y="-934.5"/>
         </scene>
         <!--Photo Editor View Controller-->
         <scene sceneID="DFo-yT-Imx">
             <objects>
-                <viewController restorationIdentifier="PhotoEditorViewController" storyboardIdentifier="PhotoEditorViewController" id="l0f-o6-lG7" customClass="PhotoEditorViewController" customModule="Fashion4ward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PhotoEditorViewController" storyboardIdentifier="PhotoEditorViewController" id="l0f-o6-lG7" customClass="PhotoEditorViewController" customModule="Fashion4Ward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R6o-Yr-4k0"/>
                         <viewControllerLayoutGuide type="bottom" id="Ubp-9I-TXd"/>
@@ -302,12 +302,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jO-YE-qCO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008.5" y="-30.5"/>
+            <point key="canvasLocation" x="2856.5" y="-958.5"/>
         </scene>
-        <!--Main Photo View Controller-->
+        <!--Main Photo View-->
         <scene sceneID="f1x-W2-5fM">
             <objects>
-                <viewController id="3fH-v4-oe2" customClass="MainPhotoViewController" customModule="Fashion4ward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main Photo View" id="3fH-v4-oe2" customClass="MainPhotoViewController" customModule="Fashion4Ward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tvt-lz-Rm9"/>
                         <viewControllerLayoutGuide type="bottom" id="t44-Pl-pdv"/>
@@ -316,7 +316,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILL-bC-X7Q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ILL-bC-X7Q">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-WU-vsn">
@@ -339,6 +339,7 @@
                                 <state key="normal" image="starsilver"/>
                                 <connections>
                                     <action selector="ratePhoto:" destination="3fH-v4-oe2" eventType="touchUpInside" id="Ezq-oH-IRl"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jif-Kb-glA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -355,6 +356,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jWs-N9-Bte">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="aTt-yy-d44">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WWo-DO-pSa">
+                                <rect key="frame" x="16" y="11" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gear"/>
+                            </button>
+                            <connections>
+                                <segue destination="poH-Id-i1k" kind="show" id="Lfh-Kb-dnY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FjD-fQ-gq4">
                             <connections>
                                 <action selector="addPhoto:" destination="3fH-v4-oe2" id="7PO-K9-N4L"/>
@@ -368,11 +379,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7c9-Yb-5nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563.5" y="-30.5"/>
+            <point key="canvasLocation" x="749.5" y="-1288.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nFy-de-GaH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B1f-mJ-hN1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AtF-gr-VEK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3fH-v4-oe2" kind="relationship" relationship="rootViewController" id="9IE-28-vTA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6h-rG-Ohl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="-1067"/>
         </scene>
     </scenes>
     <resources>
         <image name="Image_interview" width="640" height="640"/>
+        <image name="gear" width="20" height="20"/>
         <image name="rightarrow" width="128" height="128"/>
         <image name="starsilver" width="32" height="32"/>
     </resources>
