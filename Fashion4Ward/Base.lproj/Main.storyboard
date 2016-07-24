@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pf4-y0-9nN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -101,12 +101,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvd-L5-XWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.5" y="-38.5"/>
+            <point key="canvasLocation" x="2588.5" y="231.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Rating View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fashion4Ward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RatingViewController" storyboardIdentifier="RatingViewController" id="BYZ-38-t0r" customClass="RatingViewController" customModule="Fashion4Ward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -115,8 +115,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image_interview" translatesAutoresizingMaskIntoConstraints="NO" id="cso-cX-hgh">
-                                <rect key="frame" x="0.0" y="99" width="375" height="470"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image_interview" translatesAutoresizingMaskIntoConstraints="NO" id="cso-cX-hgh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="607"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-En-qTi" customClass="CosmosView" customModule="Cosmos">
                                 <rect key="frame" x="0.0" y="625" width="375" height="42"/>
@@ -141,12 +141,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081.5" y="-38.5"/>
+            <point key="canvasLocation" x="1962.5" y="601.5"/>
         </scene>
         <!--Photo Editor View Controller-->
         <scene sceneID="DFo-yT-Imx">
             <objects>
-                <viewController restorationIdentifier="PhotoEditorViewController" storyboardIdentifier="PhotoEditorViewController" id="l0f-o6-lG7" customClass="PhotoEditorViewController" customModule="Fashion4ward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PhotoEditorViewController" storyboardIdentifier="PhotoEditorViewController" id="l0f-o6-lG7" customClass="PhotoEditorViewController" customModule="Fashion4Ward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R6o-Yr-4k0"/>
                         <viewControllerLayoutGuide type="bottom" id="Ubp-9I-TXd"/>
@@ -302,12 +302,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jO-YE-qCO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008.5" y="-30.5"/>
+            <point key="canvasLocation" x="2573.5" y="-574.5"/>
         </scene>
         <!--Main Photo View Controller-->
         <scene sceneID="f1x-W2-5fM">
             <objects>
-                <viewController id="3fH-v4-oe2" customClass="MainPhotoViewController" customModule="Fashion4ward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3fH-v4-oe2" customClass="MainPhotoViewController" customModule="Fashion4Ward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tvt-lz-Rm9"/>
                         <viewControllerLayoutGuide type="bottom" id="t44-Pl-pdv"/>
@@ -316,20 +316,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILL-bC-X7Q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ILL-bC-X7Q">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-WU-vsn">
-                                <rect key="frame" x="319" y="344" width="40" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="T6A-8h-NO0"/>
-                                    <constraint firstAttribute="width" constant="40" id="XB5-3B-aYW"/>
-                                </constraints>
-                                <state key="normal" title="RightArrow" image="rightarrow"/>
-                                <connections>
-                                    <action selector="nextImage:" destination="3fH-v4-oe2" eventType="touchUpInside" id="BaL-9g-4Lq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-Y9-qAX">
                                 <rect key="frame" x="16" y="616" width="40" height="43"/>
                                 <constraints>
@@ -339,6 +328,17 @@
                                 <state key="normal" image="starsilver"/>
                                 <connections>
                                     <action selector="ratePhoto:" destination="3fH-v4-oe2" eventType="touchUpInside" id="Ezq-oH-IRl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-WU-vsn">
+                                <rect key="frame" x="319" y="344" width="40" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="T6A-8h-NO0"/>
+                                    <constraint firstAttribute="width" constant="40" id="XB5-3B-aYW"/>
+                                </constraints>
+                                <state key="normal" title="RightArrow" image="rightarrow"/>
+                                <connections>
+                                    <action selector="nextImage:" destination="3fH-v4-oe2" eventType="touchUpInside" id="BaL-9g-4Lq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -354,6 +354,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="9H1-WU-vsn" secondAttribute="trailing" id="yK9-nk-Q4p"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="jWs-N9-Bte">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FjD-fQ-gq4">
                             <connections>
@@ -361,6 +362,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mainImageView" destination="ILL-bC-X7Q" id="OIi-Wa-Kqg"/>
@@ -368,7 +370,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7c9-Yb-5nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563.5" y="-30.5"/>
+            <point key="canvasLocation" x="1962.5" y="-125.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ayJ-eJ-3PG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pf4-y0-9nN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zv7-Jl-vme">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ADN-ko-QtB">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="3fH-v4-oe2" kind="relationship" relationship="rootViewController" id="cPx-c3-o3w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gez-YW-weh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="-139"/>
         </scene>
     </scenes>
     <resources>

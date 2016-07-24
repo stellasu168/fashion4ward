@@ -11,6 +11,7 @@ import UIKit
 class MainPhotoViewController: UIViewController{
     
     @IBOutlet weak var mainImageView: UIImageView!
+    var currentImage: String!
     
     @IBAction func nextImage(sender: UIButton) {
         generateRandomPic()
@@ -30,6 +31,9 @@ class MainPhotoViewController: UIViewController{
     
     @IBAction func ratePhoto(sender: UIButton) {
         //navigate to ratingphotoview
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("RatingViewController") as! RatingViewController
+        controller.imageName = currentImage
+        self.navigationController!.pushViewController(controller, animated: true)
     }
     
     
@@ -37,7 +41,9 @@ class MainPhotoViewController: UIViewController{
     func generateRandomPic() {
         let picNames = ["a", "b", "c", "d", "e", "f", "g"]
         let randomIndex = Int(arc4random_uniform(UInt32(picNames.count)))
-        mainImageView.image = UIImage(named: picNames[randomIndex])
+        let imageName = picNames[randomIndex]
+        currentImage = imageName
+        mainImageView.image = UIImage(named: imageName)
     }
     
 

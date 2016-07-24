@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RatingViewController.swift
 //  Fashion4Ward
 //
 //  Created by Stella Su on 7/23/16.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class RatingViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
+    var imageName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +21,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.automaticallyAdjustsScrollViewInsets = false
 
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        imageView.image = UIImage(named: imageName)
+    }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let imageHeight = imageView.frame.height
+        //let imageHeight = imageView.frame.height
         
         //let newOrigin = CGPoint(x: 0, y: -imageHeight)
         
