@@ -13,9 +13,12 @@
 		552E8BA31D440D43004F8B2A /* Fashion4Ward.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 552E8BA11D440D43004F8B2A /* Fashion4Ward.xcdatamodeld */; };
 		552E8BA51D440D43004F8B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552E8BA41D440D43004F8B2A /* Assets.xcassets */; };
 		552E8BA81D440D43004F8B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552E8BA61D440D43004F8B2A /* LaunchScreen.storyboard */; };
+		C639FF35DC6B16099A945177 /* Pods_Fashion4Ward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F297614115918BD4BA3E16 /* Pods_Fashion4Ward.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35928F1C0F2C6A9133B9A50C /* Pods-Fashion4Ward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fashion4Ward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fashion4Ward/Pods-Fashion4Ward.debug.xcconfig"; sourceTree = "<group>"; };
+		4EB5A633BDE4E2BC802B2532 /* Pods-Fashion4Ward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fashion4Ward.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fashion4Ward/Pods-Fashion4Ward.release.xcconfig"; sourceTree = "<group>"; };
 		552E8B971D440D42004F8B2A /* Fashion4Ward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fashion4Ward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		552E8B9A1D440D43004F8B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		552E8B9C1D440D43004F8B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		552E8BA41D440D43004F8B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552E8BA71D440D43004F8B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		552E8BA91D440D43004F8B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F297614115918BD4BA3E16 /* Pods_Fashion4Ward.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fashion4Ward.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C639FF35DC6B16099A945177 /* Pods_Fashion4Ward.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				552E8B991D440D42004F8B2A /* Fashion4Ward */,
 				552E8B981D440D42004F8B2A /* Products */,
+				A39BF626A2E2C68616BCCE23 /* Pods */,
+				DCB5F852C5279E224D094994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = Fashion4Ward;
 			sourceTree = "<group>";
 		};
+		A39BF626A2E2C68616BCCE23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35928F1C0F2C6A9133B9A50C /* Pods-Fashion4Ward.debug.xcconfig */,
+				4EB5A633BDE4E2BC802B2532 /* Pods-Fashion4Ward.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCB5F852C5279E224D094994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F297614115918BD4BA3E16 /* Pods_Fashion4Ward.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 552E8BAC1D440D43004F8B2A /* Build configuration list for PBXNativeTarget "Fashion4Ward" */;
 			buildPhases = (
+				6BE4742BE808AE618E2570B7 /* 📦 Check Pods Manifest.lock */,
 				552E8B931D440D42004F8B2A /* Sources */,
 				552E8B941D440D42004F8B2A /* Frameworks */,
 				552E8B951D440D42004F8B2A /* Resources */,
+				555BB7D570A4C532A08BF465 /* 📦 Embed Pods Frameworks */,
+				E4450042EA36C513ED0EAE91 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		555BB7D570A4C532A08BF465 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fashion4Ward/Pods-Fashion4Ward-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BE4742BE808AE618E2570B7 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4450042EA36C513ED0EAE91 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fashion4Ward/Pods-Fashion4Ward-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		552E8B931D440D42004F8B2A /* Sources */ = {
@@ -251,6 +326,7 @@
 		};
 		552E8BAD1D440D43004F8B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35928F1C0F2C6A9133B9A50C /* Pods-Fashion4Ward.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fashion4Ward/Info.plist;
@@ -262,6 +338,7 @@
 		};
 		552E8BAE1D440D43004F8B2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB5A633BDE4E2BC802B2532 /* Pods-Fashion4Ward.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fashion4Ward/Info.plist;
@@ -290,6 +367,7 @@
 				552E8BAE1D440D43004F8B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

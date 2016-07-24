@@ -1,0 +1,6 @@
+framework module Pods_Fashion4Ward {
+  umbrella header "Pods-Fashion4Ward-umbrella.h"
+
+  export *
+  module * { export * }
+}
