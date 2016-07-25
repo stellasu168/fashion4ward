@@ -5,4 +5,4 @@ This is an iOS app in Swift(2.1) that helps users to suggest on what to wear for
 Third party library: A star rating control for iOS in Swift
 https://github.com/marketplacer/Cosmos
 
-![Alt Text](https://github.com/stellasu168/fashion4ward/fashion4ward.gif)
+![Alt Text](https://github.com/stellasu168/fashion4ward/blob/master/fashion4ward.gif)
